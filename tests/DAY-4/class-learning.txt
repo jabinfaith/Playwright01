@@ -1,0 +1,127 @@
+//id
+//name
+//class
+//link
+//text
+//role
+//placehholder
+//data-id
+//type
+//size
+
+//css selector
+
+//using id attribute
+//[id='value']
+
+//using class attribute
+//.classValue
+
+//using attribute and tagname
+
+//syntax
+//tagname[attribute='value']
+//input[id=''username']
+//input[class='inputLogin'][id=''username']
+
+
+//text based selector
+//tagname[text='value']
+
+
+//Parent-cild
+//div[id='label'] a
+
+<div> class=grandparent
+    <div> class=Parent
+        <div> class=child
+        <span></span> sibling
+        <a></a> sibling
+    </div>
+</div>
+
+
+sibling
+immediate sibling
+
+any sibling attribute + tagname
+p[class='top']+p
+
+-all sibling
+p[class='top']~p
+    nth(index)
+    last();
+    first();
+    filter();
+    locator(p[class='top']~p).filter{{}}
+    {hasText:pwd}
+
+
+
+XPATH
+-----
+
+//tagname[attribute='attribute value']
+
+text based
+//tagname[text()='text value']
+
+
+multiple occurrence
+(any basic xpath)[index] --start with 1
+
+(//input[class='inputLogin'])[2]
+
+Partial match
+-------------
+//tagname[contains(@attribute,'attributeValue')}]
+//tagname[contains(text(),'black value)]
+
+
+child to Parent
+
+child xpath/parent::tagname parent
+
+gparent to gchild
+
+gparent xpath//gchild tagname
+
+gchild to gparent
+
+(attributebased xpath of gchild)/ancestor::gparent tagname
+//label[text()='pwd']/ancestor::div
+
+elder xpath/following-sibling::tagname if targeted sibling
+younger xpath/preceding-sibling::tagname if targeted elder sibling
+
+elder cousin xpath/following::tagename of young
+younger cousin xpath/preceding::tagname of elder
+
+
+
+PLAYWRIGHT SELECTOR:
+--------------------
+
+getByRole-->button,link,checkbox
+getByLabel-->attributes/<label>
+getByText-->using black text
+getByPlaceholder-->attributes
+
+
+Dropdown:
+---------
+
+2 types of Dropdown
+
+1.select tag
+2.non-select tag
+
+select tag:
+----------
+option--> of value attribute
+      -->index
+      -->text
+
+
+
+

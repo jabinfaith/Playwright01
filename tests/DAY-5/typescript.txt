@@ -1,0 +1,23 @@
+typescript
+
+superset of JS
+
+static type checking --> catch the error during compilation
+
+to install typescript
+
+npm install typescript -- local installation
+
+npm install -g typescript -- global installation
+
+
+type inferences
+
+1. Implicit type inference -- when compiler infers/defines the datatype
+2. Explicit type inference -- when you define the datatype explicity
+
+
+to run a typescript file:
+
+tsc filename -- this will create a js file with same file name
+node filename
